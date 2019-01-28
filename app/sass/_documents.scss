@@ -1,0 +1,28 @@
+
+.documents{
+    color:#6F6F6F;
+}
+.documents h3{
+    font-size: 2em;
+}
+
+.documents ul{
+    width: 95%;
+    display: inline-block;
+}
+
+.documents>div>ul>li{
+    font-size: 1.5em;
+    padding-top: 0.5em;
+    text-align: justify;
+}
+
+p.attention span{
+    vertical-align:middle;
+    font-size: 1.4em;
+    font-weight: 900;
+
+    height: 4em;
+    background-color: yellow;
+    color: red;
+}

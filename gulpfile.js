@@ -79,7 +79,7 @@ gulp.task('watch', function() {
     gulp.watch('app/sass/**/*.scss', gulp.parallel('sass')); // Наблюдение за sass файлами
     // Наблюдение за другими типами файлов
     // gulp.watch('*.html', browserSync.reload); //это наблюдение за HTML не работает 
-    gulp.watch('*.html',gulp.parallel('html'));//Наблюдение за HTML файлами в корне проекта
+    gulp.watch('app/*.html',gulp.parallel('html'));//Наблюдение за HTML файлами в корне проекта
     gulp.watch('app/js/**/*.js', gulp.parallel('js')); // Н
 });
 

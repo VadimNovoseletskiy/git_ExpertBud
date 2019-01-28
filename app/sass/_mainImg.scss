@@ -1,0 +1,38 @@
+
+
+.mainImg img{
+    width: 100%;
+}
+
+.baner{
+    background:#000 url('../img/exp.jpg') no-repeat top center;
+    width: 100%;
+    height: 45em;
+    
+}
+
+.baner>div{
+    width: 45%;
+    height: 20em;
+    color: white;
+    margin-top: 20em;
+    margin-left: 4em;
+    float: left;
+    // display: inline-block;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-origin: border-box;
+    background-size: cover;
+    -webkit-background-size:cover ;
+    -moz-background-size:cover ;
+}
+
+.baner-text p{
+    width: 95%;
+    display: inline-block;
+    font-size: 1.6em;
+}
+
+.baner-text>h2{
+    text-transform: uppercase;
+    font-size: 2em;
+}
