@@ -5,16 +5,18 @@
     float: left;
 }
 .addressPanel{
-    background-color: aqua;
-    height: 3em;
+    background-color: rgb(255, 208, 0);
+    height: 2em;
 }
 
 .navPanel{
-    background-color: blueviolet;
-    height: 5em;
+    background-color: #3e4156;
+    // height: 5em;
 }
 
 .headlines h2{
+    margin-top:3.5em;
+    margin-bottom: 1em;
     font-size: 3em;
     width: 80%;
     display: inline-block;

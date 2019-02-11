@@ -12,7 +12,7 @@
 
     <div class="container">
 
-        <div class="row addressPanel">
+        <div class="row addressPanel" style="position: fixed; z-index: 2; width: 100%">
             <div class="cols col-1">
                 <img class="langIcon" src="./icons/lang.png" alt="lang">
 
@@ -20,38 +20,59 @@
             </div>
 
             <div class="cols col-3">
-                    <details class="callMe">
-                            <summary>0674731145:</summary>
-                                <ul class="callMeTel">
-                                    <li><a href="tel:+380674731145"> 0674731145</a></li>
+                <details class="callMe">
+                        <summary>0674731145:</summary>
+                            <ul class="callMeTel">
+                                <li><a href="tel:+380674731145"> 0674731145</a></li>
                                     <li><a href="tel:+380933342042"> 0933342042</a></li>
-                                    <li><a href="tel:+380679474897"> 0679474897</a></li>
-                                    <li><a href="tel:+380984971936"> 0984971936</a></li>
-                                </ul>
-                            
-                    </details>
+                                <li><a href="tel:+380679474897"> 0679474897</a></li>
+                                <li><a href="tel:+380984971936"> 0984971936</a></li>
+                            </ul>
+                        
+                </details>
             </div>
 
         </div>
 
-        <div class="row navPanel">
-
+        <div class="row navPanel" style="top:2em; position: fixed; z-index: 2;width: 100%;">
+            <div class="cols col-6">
+                <!-- content -->
+            </div>
+            <div class="cols col-6">
+                <nav>
+                    <div>
+                        <a id="touch-menu" class="mobile-menu" href="#"><i class="icon-reorder"></i>открыть меню  <i style="float:right;" class="fas fa-align-justify"></i> </a>
+                        <nav>
+                            <ul class="menu">
+                                <li class=""><a href="index.html"><i class="icon-home"></i>головна</a></li>
+                                <li class="menu-text"><a  href="#servise"><i class="icon-user"></i>послуги</a></li>
+                                <li class="menu-text"><a  href="#consulting"><i class="icon-bullhorn"></i>консалтінг</a></li>
+                                <li class="menu-text"><a href="#documents"><i class="icon-home"></i>документи</a>
+                                <li class="menu-text"><a href="#about"><i class="icon-home"></i>про нас</a>
+                                <li class="menu-text"><a href="#contacts"><i class="icon-home"></i>контакти</a>
+                                
+                            </ul>
+                        </nav>
+                    </div>           
+                </nav>        
+            </div>
         </div>
 
-        <div class="row mainImg">
-            <div class="cols col-12">
+        <div class="row ">
+            <div class="mainImage" class="cols col-12">
+
                 <img  src="./img/exp.jpg" alt="">
-                <div class="baner">
-                    <div class="baner-text">
-                        <h2>експертиза проектів будівництва</h2>
-                        <p>команда кваліфікованих профессіоналів з глибоким практичним досвідом виконають експертизу
-                        будь якої складності незалежно від суми загального кошторису</p>
-                    </div>
+
+                <div class="baner-text">
+                    <h2>експертиза проектів будівництва</h2>
+                    <p>команда кваліфікованих профессіоналів з глибоким практичним досвідом виконають експертизу
+                    будь якої складності незалежно від суми загального кошторису</p>
                 </div>
+
             </div>
         </div>
 
-        <div class="row headlines">
+        <div id="servise" class="row headlines">
             <div class="cols col-12">
                 <h2>Послуги:</h2>
             </div>
@@ -71,9 +92,9 @@
             </div>
         </div>
 
-        <div class="row direction">
+        <div id='direction' class="row direction ">
             <div class="cols col-12">
-                <h3>напрямки проведення експертизи проектної документації:</h3>
+                <h3 >напрямки проведення експертизи проектної документації:</h3>
                 <ul>
                     <li>Експертиза архітектурного рішення проекту будівництва;</li>
                     <li>Експертиза кошторисної частини проектної документації;</li>
@@ -85,9 +106,9 @@
             </div>
         </div>
 
-        <div class="row headlines">
+        <div id='consulting' class="row headlines">
             <div class="cols col-12">
-                <h2>Консалтинг:</h2>
+                <h2 >Консалтинг:</h2>
             </div>
         </div>
 
@@ -102,9 +123,9 @@
             </div>
         </div>
 
-        <div class="row headlines">
+        <div id='documents' class="row headlines">
             <div class="cols col-12">
-                 <h2>Перелік документів для проведення експертизи проектів будівництва</h2>
+                 <h2 >Перелік документів для проведення експертизи проектів будівництва</h2>
             </div>
         </div>
 
@@ -156,9 +177,9 @@
             </div>
         </div>
 
-        <div class="row headlines ">
+        <div id='about' class="row headlines ">
             <div class="cols col-12">
-                <h2>Про нас</h2>
+                <h2 >Про нас</h2>
             </div>
         </div>
 
@@ -170,12 +191,12 @@
                 <button>перевірити</button>
             </div>
             <div class="cols col-3 downDoc">
-                <img src="./icons/downlDocs.jpg" alt="downloads docs">
+                <img src="./icons/downlDocs1.jpg" alt="downloads docs">
                 <p>Завантажте пакет документів необхідних для звернення</p>
                 <button>завантажити</button>
             </div>
             <div class="cols col-3 expert-result">
-                <img src="./icons/result.png" alt="expert result">
+                <img src="./icons/result.jpg" alt="expert result">
                 <p>Результат: отримання  Вами експертного висновоку</p>
                 <button>детальніше</button>
             </div>
@@ -189,13 +210,13 @@
 
         <div class="row headlines">
             <div class="cols col-12">
-                <h2>Контакти:</h2>
+                <h2 id='contacts'>Контакти:</h2>
             </div>
         </div>
 
         <div class="row contacts ">
             <div class="cols col-7">
-	            <iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2593.9793511232538!2d32.056773215370555!3d49.44710727934953!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d14c831d9b17ff%3A0x11d818c8b2500a0a!2z0LLRg9C70LjRhtGPINCl0YDQtdGJ0LDRgtC40LosIDE4MCwg0KfQtdGA0LrQsNGB0LgsINCn0LXRgNC60LDRgdGM0LrQsCDQvtCx0LvQsNGB0YLRjCwgMTgwMDA!5e0!3m2!1sru!2sua!4v1524161152434" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+	            <iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2593.9793511232538!2d32.056773215370555!3d49.44710727934953!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d14c831d9b17ff%3A0x11d818c8b2500a0a!2z0LLRg9C70LjRhtGPINCl0YDQtdGJ0LDRgtC40LosIDE4MCwg0KfQtdGA0LrQsNGB0LgsINCn0LXRgNC60LDRgdGM0LrQsCDQvtCx0LvQsNGB0YLRjCwgMTgwMDA!5e0!3m2!1sru!2sua!4v1524161152434" width="900" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
             <div class="cols col-5">
                 <div class="adress">
@@ -221,6 +242,9 @@
 
     </div>
 
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript" ></script>
+    <script src="js/menu.js" type="text/javascript"></script>
     
 </body>
 </html>
