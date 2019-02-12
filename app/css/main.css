@@ -113,6 +113,7 @@ nav {
 .menu li a {
   font-weight: 600;
   text-decoration: none;
+  font-size: 1.2em;
   padding: 11px;
   display: block;
   color: #ffffff;
@@ -294,7 +295,7 @@ ul {
   color: #6F6F6F; }
 
 .consulting ul {
-  width: 95%;
+  width: 90%;
   display: inline-block; }
 
 .consulting ul > li {
@@ -309,7 +310,7 @@ ul {
   font-size: 2em; }
 
 .documents ul {
-  width: 95%;
+  width: 90%;
   display: inline-block; }
 
 .documents > div > ul > li {
@@ -317,13 +318,22 @@ ul {
   padding-top: 0.5em;
   text-align: justify; }
 
-p.attention span {
-  vertical-align: middle;
+p.attention {
+  margin-top: 2em; }
+
+h4.attention {
+  margin-top: 1em;
+  margin-bottom: 1em;
   font-size: 1.4em;
   font-weight: 900;
-  height: 4em;
-  background-color: yellow;
   color: red; }
+
+p.attentionText > span {
+  font-size: 1.4em;
+  font-weight: 900;
+  margin-left: 1em;
+  display: inline-block;
+  width: 90%; }
 
 .langIcon {
   width: 20%;
@@ -368,6 +378,9 @@ p.attention span {
 .adress {
   width: 90%;
   display: inline-block; }
+
+iframe.maps {
+  width: 90%; }
 
 .footer {
   background-color: #0041ED;

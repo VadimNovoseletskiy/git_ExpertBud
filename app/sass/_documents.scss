@@ -7,7 +7,7 @@
 }
 
 .documents ul{
-    width: 95%;
+    width: 90%;
     display: inline-block;
 }
 
@@ -17,12 +17,24 @@
     text-align: justify;
 }
 
-p.attention span{
-    vertical-align:middle;
+p.attention{
+    margin-top:2em;
+}
+
+h4.attention{
+    margin-top: 1em;
+    margin-bottom: 1em;
     font-size: 1.4em;
     font-weight: 900;
-
-    height: 4em;
-    background-color: yellow;
     color: red;
+
+}
+
+p.attentionText>span{
+    font-size: 1.4em;
+    font-weight: 900;
+    margin-left: 1em;
+    display: inline-block;
+    width: 90%;
+
 }
