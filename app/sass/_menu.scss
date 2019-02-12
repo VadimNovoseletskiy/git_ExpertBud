@@ -1,3 +1,10 @@
+.navPanel{
+    background-color: #3e4156;
+    top:2em;
+    position: fixed; 
+    z-index: 2;
+    width: 100%;
+}
 
 
 
@@ -122,6 +129,9 @@ width:100%;}
 .menu ul ul {left:0;}
 
 }
+
+ul{margin-top:0;
+    margin-bottom: 0;}
 
 @media (max-width: 480px) {
 

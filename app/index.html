@@ -8,33 +8,43 @@
 
     <link rel="stylesheet" href="css/main.css">
 </head>
-<body>
+<body >
+        <div id="main" ></div>
+    <div  class="container">
+        
+        <div class="row addressPanel">
 
-    <div class="container">
-
-        <div class="row addressPanel" style="position: fixed; z-index: 2; width: 100%">
             <div class="cols col-1">
                 <img class="langIcon" src="./icons/lang.png" alt="lang">
 
                 <button href="#"> RU</button>
             </div>
 
-            <div class="cols col-3">
-                <details class="callMe">
-                        <summary>0674731145:</summary>
-                            <ul class="callMeTel">
-                                <li><a href="tel:+380674731145"> 0674731145</a></li>
-                                    <li><a href="tel:+380933342042"> 0933342042</a></li>
-                                <li><a href="tel:+380679474897"> 0679474897</a></li>
-                                <li><a href="tel:+380984971936"> 0984971936</a></li>
-                            </ul>
-                        
-                </details>
+            <div class="cols col-4">
+                <div class="telephone">
+                    <img  src="./icons/tel.png" alt="telephone">
+                    <span>+38(097)603-76-58</span>
+                    <span>+38(050)925-37-50</span>
+                </div>
+            </div>
+
+            <div class="cols col-3  ">
+                    <div class="mailTo">
+                        <img src="./icons/letter.png" alt="mailTo">
+                        <span>expertproektbud@gmail.com</span>
+                    </div>
+            </div>
+
+            <div class="cols col-4">
+                <div class="schedule">
+                    <img src="./icons/clock.png" alt="schedule">
+                    <span>График работы: Пн-Пт 9.00-17.00</span>
+                </div>
             </div>
 
         </div>
 
-        <div class="row navPanel" style="top:2em; position: fixed; z-index: 2;width: 100%;">
+        <div class="row navPanel">
             <div class="cols col-6">
                 <!-- content -->
             </div>
@@ -44,12 +54,12 @@
                         <a id="touch-menu" class="mobile-menu" href="#"><i class="icon-reorder"></i>открыть меню  <i style="float:right;" class="fas fa-align-justify"></i> </a>
                         <nav>
                             <ul class="menu">
-                                <li class=""><a href="index.html"><i class="icon-home"></i>головна</a></li>
-                                <li class="menu-text"><a  href="#servise"><i class="icon-user"></i>послуги</a></li>
-                                <li class="menu-text"><a  href="#consulting"><i class="icon-bullhorn"></i>консалтінг</a></li>
-                                <li class="menu-text"><a href="#documents"><i class="icon-home"></i>документи</a>
-                                <li class="menu-text"><a href="#about"><i class="icon-home"></i>про нас</a>
-                                <li class="menu-text"><a href="#contacts"><i class="icon-home"></i>контакти</a>
+                                <li class=""><a href="#main"><i class="icon-home"></i>головна</a></li>
+                                <li class=""><a  href="#servise"><i class="icon-user"></i>послуги</a></li>
+                                <li class=""><a  href="#consulting"><i class="icon-bullhorn"></i>консалтінг</a></li>
+                                <li class=""><a href="#documents"><i class="icon-home"></i>документи</a>
+                                <li class=""><a href="#about"><i class="icon-home"></i>про нас</a>
+                                <li class=""><a href="#contacts"><i class="icon-home"></i>контакти</a>
                                 
                             </ul>
                         </nav>
@@ -59,14 +69,16 @@
         </div>
 
         <div class="row ">
-            <div class="mainImage" class="cols col-12">
+            <div   class="cols col-12">
 
-                <img  src="./img/exp.jpg" alt="">
+                <div class="mainImage">
+                    <img  src="./img/exp.jpg" alt="">
 
-                <div class="baner-text">
-                    <h2>експертиза проектів будівництва</h2>
-                    <p>команда кваліфікованих профессіоналів з глибоким практичним досвідом виконають експертизу
-                    будь якої складності незалежно від суми загального кошторису</p>
+                    <div class="baner-text">
+                        <h2>експертиза проектів будівництва</h2>
+                        <p>команда кваліфікованих профессіоналів з глибоким практичним досвідом виконають експертизу
+                        будь якої складності незалежно від суми загального кошторису</p>
+                    </div>
                 </div>
 
             </div>
@@ -81,14 +93,16 @@
         <div class="row service">
             <div class="cols col-12">
                 <h3>здійснюємо експертизу проектів :</h3>
-                <ul>
-                    <li>на всій території Черкаської областінезалежно від розташування об'єкту будівництва;</li>
-                    <li>вусіх галузях економіки, крім експертизи доріг, ядерної і радіаційної безпеки;</li>
-                    <li>об'єктіввиробничого та невиробничого призначення;</li>
-                    <li>за всіма розділамипроектної документації;</li>
-                    <li>об'єктів за класом наслідків СС1-СС2, які споруджуються з залученням бюджетних коштів, державних і комунальних підприємств, установ та організацій, а також кредитів, наданих під державні гарантії, та не містять державну таємницю</li>
-                    <li>об'єктів за класом наслідків СС1-СС3, що будуються без залучення бюджетних коштів, державних і комунальних підприємств, установ та організацій, а також кредитів, наданих під державні гарантії, та не містять державної таємниці;</li>
-                </ul>
+                <!-- <div class="serviceItem"> -->
+                    <ul>
+                        <li>на всій території Черкаської областінезалежно від розташування об'єкту будівництва;</li>
+                        <li>вусіх галузях економіки, крім експертизи доріг, ядерної і радіаційної безпеки;</li>
+                        <li>об'єктіввиробничого та невиробничого призначення;</li>
+                        <li>за всіма розділамипроектної документації;</li>
+                        <li>об'єктів за класом наслідків СС1-СС2, які споруджуються з залученням бюджетних коштів, державних і комунальних підприємств, установ та організацій, а також кредитів, наданих під державні гарантії, та не містять державну таємницю</li>
+                        <li>об'єктів за класом наслідків СС1-СС3, що будуються без залучення бюджетних коштів, державних і комунальних підприємств, установ та організацій, а також кредитів, наданих під державні гарантії, та не містять державної таємниці;</li>
+                    </ul>
+                <!-- </div> -->
             </div>
         </div>
 

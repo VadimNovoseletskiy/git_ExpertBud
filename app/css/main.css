@@ -1,4 +1,20 @@
 @charset "UTF-8";
+/* RESET STYLES */
+* {
+  margin: 0;
+  padding: 0; }
+
+article, aside, figure, footer, header, hgroup, nav, section {
+  display: block; }
+
+* {
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+  /* Opera/IE 8+ */ }
+
 .container {
   width: 100%;
   margin: 0 auto; }
@@ -39,177 +55,45 @@
   clear: both; }
 
 /* end clear fix */
-/* RESET STYLES */
-*, html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, label, fieldset, input, p, blockquote, th, td {
-  margin: 0;
-  padding: 0; }
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
-
-fieldset, img {
-  border: 0; }
-
-address, caption, cite, code, dfn, em, strong, th, var {
-  font-style: normal;
-  font-weight: normal; }
-
-ol, ul, li {
-  list-style: none; }
-
-caption, th {
-  text-align: left; }
-
-h1, h2, h3, h4, h5, h6 {
-  font-weight: normal; }
-
-q:before, q:after {
-  content: ''; }
-
-strong {
-  font-weight: bold; }
-
-em {
-  font-style: italic; }
-
-.italic {
-  font-style: italic; }
-
-.aligncenter {
-  display: block;
-  margin: 0 auto; }
-
-.alignleft {
-  float: left;
-  margin: 10px; }
-
-.alignright {
-  float: right;
-  margin: 10px; }
-
-.no-margin {
-  margin: 0px; }
-
-.no-bottom {
-  margin-bottom: 0px; }
-
-.no-padding {
-  padding: 0px; }
-
-.margin-t {
-  margin-top: 22px; }
-
-div {
-  position: relative; }
-
-a {
-  text-decoration: none; }
-
-a:hover {
-  text-decoration: underline; }
-
-a:active, a:focus {
-  outline: none; }
-
-article, aside, figure, footer, header, hgroup, nav, section {
-  display: block; }
-
-* {
-  -webkit-box-sizing: border-box;
-  /* Safari/Chrome, other WebKit */
-  -moz-box-sizing: border-box;
-  /* Firefox, other Gecko */
-  box-sizing: border-box;
-  /* Opera/IE 8+ */ }
-
-html {
-  -webkit-font-smoothing: antialiased; }
-
-a {
-  color: #BA0707; }
-
-a:hover {
-  color: #BA0707;
-  text-decoration: underline; }
-
-body {
-  background: #ffffff url("images/bkg.jpg") no-repeat 0 0;
-  color: #3E4156;
-  font: 14px "Open Sans", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -webkit-text-size-adjust: 100%;
-  line-height: 1;
+.addressPanel {
+  background-color: #ed9a00;
+  height: 2em;
+  line-height: 2em;
+  position: fixed;
+  z-index: 2;
   width: 100%; }
 
-h1 {
-  font-size: 36px;
-  line-height: 1.3em; }
+.addressPanel span {
+  color: white;
+  font-size: 1.1em;
+  font-weight: bold;
+  margin-left: 1em;
+  display: inline-block; }
 
-h2 {
-  font-size: 32px;
-  line-height: 1.3em; }
+.telephone, .mailTo, .schedule {
+  line-height: 1.7em; }
 
-h3 {
-  font-size: 24px;
-  line-height: 1.3em; }
+.telephone > img {
+  width: 5%;
+  vertical-align: middle;
+  display: inline-block; }
 
-h4 {
-  font-size: 18px;
-  line-height: 1.3em; }
+.mailTo > img {
+  width: 10%;
+  vertical-align: middle;
+  display: inline-block; }
 
-h5 {
-  font-size: 16px; }
-
-h6 {
-  font-size: 14px; }
-
-p {
-  padding-bottom: 11px; }
-
-p, div, span {
-  line-height: 1.5em; }
-
-.column-clear {
-  clear: both; }
-
-.clear {
-  overflow: hidden; }
-
-.mainWrap {
-  width: 960px;
-  margin: 0 auto; }
-
-.title {
-  margin: 100px 0 20px 0;
-  text-align: center;
-  color: #3E4156; }
-
-.back {
-  text-align: center; }
-
-.langIcon {
-  width: 20%;
-  float: left; }
-
-.addressPanel {
-  background-color: #ffd000;
-  height: 2em; }
+.schedule > img {
+  width: 5%;
+  vertical-align: middle;
+  display: inline-block; }
 
 .navPanel {
-  background-color: #3e4156; }
-
-.headlines h2 {
-  margin-top: 3.5em;
-  margin-bottom: 1em;
-  font-size: 3em;
-  width: 80%;
-  display: inline-block;
-  color: #1C65D4; }
-
-.footer {
-  background-color: #0041ED;
-  height: 5em; }
+  background-color: #3e4156;
+  top: 2em;
+  position: fixed;
+  z-index: 2;
+  width: 100%; }
 
 nav {
   display: block;
@@ -335,17 +219,27 @@ nav {
   .menu ul ul {
     left: 0; } }
 
+ul {
+  margin-top: 0;
+  margin-bottom: 0; }
+
+.headlines h2 {
+  margin-top: 2em;
+  margin-bottom: 1em;
+  font-size: 3em;
+  width: 80%;
+  display: inline-block;
+  color: #1C65D4; }
+
 .mainImage {
   position: relative;
   width: 100%;
   /*Важный параметр. Блоки абсолюта не будут вылазить за этот размер*/
-  height: 100vh;
-  overflow: hidden; }
+  height: 100vh; }
 
 .mainImage img {
   width: 100%;
-  height: auto;
-  float: left; }
+  height: 100vh; }
 
 .baner-text {
   position: absolute;
@@ -373,7 +267,7 @@ nav {
   font-size: 2em; }
 
 .service ul {
-  width: 95%;
+  width: 90%;
   display: inline-block; }
 
 .service ul > li {
@@ -388,7 +282,7 @@ nav {
   font-size: 2em; }
 
 .direction ul {
-  width: 95%;
+  width: 90%;
   display: inline-block; }
 
 .direction ul > li {
@@ -431,6 +325,10 @@ p.attention span {
   background-color: yellow;
   color: red; }
 
+.langIcon {
+  width: 20%;
+  float: left; }
+
 .accredit > img {
   width: 50%; }
 
@@ -470,6 +368,10 @@ p.attention span {
 .adress {
   width: 90%;
   display: inline-block; }
+
+.footer {
+  background-color: #0041ED;
+  height: 5em; }
 
 @media only screen and (min-width: 767px) and (max-width: 849px) {
   .container .cols.col-1 {
