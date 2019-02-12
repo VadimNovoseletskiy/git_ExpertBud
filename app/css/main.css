@@ -55,10 +55,17 @@ article, aside, figure, footer, header, hgroup, nav, section {
   clear: both; }
 
 /* end clear fix */
+.nameCompany {
+  line-height: 2em; }
+  .nameCompany img {
+    width: 6%;
+    float: left; }
+  .nameCompany p {
+    display: inline-block; }
+
 .addressPanel {
   background-color: #ed9a00;
   height: 2em;
-  line-height: 2em;
   position: fixed;
   z-index: 2;
   width: 100%; }
@@ -71,7 +78,9 @@ article, aside, figure, footer, header, hgroup, nav, section {
   display: inline-block; }
 
 .telephone, .mailTo, .schedule {
-  line-height: 1.7em; }
+  line-height: 2em; }
+  .telephone span, .mailTo span, .schedule span {
+    vertical-align: middle; }
 
 .telephone > img {
   width: 5%;
@@ -234,32 +243,31 @@ ul {
 
 .mainImage {
   position: relative;
+  overflow: hidden;
   width: 100%;
   /*Важный параметр. Блоки абсолюта не будут вылазить за этот размер*/
   height: 100vh; }
-
-.mainImage img {
-  width: 100%;
-  height: 100vh; }
+  .mainImage img {
+    width: 100%;
+    height: 100vh; }
 
 .baner-text {
   position: absolute;
   bottom: 0;
   /*Привязываем к нижней части на случай большого объема текста*/
-  margin-bottom: 8em;
+  margin-bottom: 5%;
   /*И просто приподнимаем чуть вверх*/
-  left: 20px;
+  left: 2%;
   font: 1.5em verdana;
   padding: 2em;
   background: #000;
   opacity: 0.7;
   width: 40%;
   color: white; }
-
-.baner-text > h2 {
-  color: white;
-  text-transform: uppercase;
-  font-size: 2em; }
+  .baner-text h2 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 2em; }
 
 .service {
   color: #6F6F6F; }

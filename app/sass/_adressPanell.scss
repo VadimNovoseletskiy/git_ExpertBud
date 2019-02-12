@@ -3,7 +3,6 @@
 .addressPanel{
     background-color: rgb(237, 154, 0);
     height: 2em;
-    line-height: 2em;
     position: fixed; 
     z-index: 2; 
     width: 100%;
@@ -22,7 +21,11 @@
 // стили для иконок(телефон, почта, график работы )
 
 .telephone, .mailTo , .schedule{
-    line-height: 1.7em;
+    line-height: 2em;
+
+    span{
+        vertical-align: middle;
+    }
     
 }
 
