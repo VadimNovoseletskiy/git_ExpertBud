@@ -1,0 +1,50 @@
+.banner{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    img{
+        width: 100%;
+        min-width: 1280px;
+        height: 100%;
+    }
+}
+.banner-text{
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    font-family: verdana;
+	padding: 2em; 
+	background:rgba($color: #000000, $alpha: 0.7);
+    width:90%;
+    color: white;
+    
+    h2{
+        text-transform: uppercase;
+        font-size: 1.5em;
+        margin-bottom: 1em;
+        line-height: 1.5em;
+    }
+    p{
+        font-size: 1em;
+        line-height: 1.5em;
+        font-style: italic;
+    }
+
+}
+@media (min-width: 576px) {  }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { 
+    
+ }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+    .banner-text{
+        width: 40%;
+    }
+ }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {  }
