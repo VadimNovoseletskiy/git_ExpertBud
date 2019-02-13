@@ -74,28 +74,17 @@ article, aside, figure, footer, header, hgroup, nav, section {
   color: white;
   font-size: 1.1em;
   font-weight: bold;
-  margin-left: 1em;
-  display: inline-block; }
+  margin-left: 0.5em; }
 
 .telephone, .mailTo, .schedule {
   line-height: 2em; }
-  .telephone span, .mailTo span, .schedule span {
-    vertical-align: middle; }
-
-.telephone > img {
-  width: 5%;
-  vertical-align: middle;
-  display: inline-block; }
-
-.mailTo > img {
-  width: 10%;
-  vertical-align: middle;
-  display: inline-block; }
-
-.schedule > img {
-  width: 5%;
-  vertical-align: middle;
-  display: inline-block; }
+  .telephone i.fa-phone, .mailTo i.fa-phone, .schedule i.fa-phone {
+    transform: rotate(160deg);
+    color: white; }
+  .telephone i.fa-envelope, .mailTo i.fa-envelope, .schedule i.fa-envelope {
+    color: white; }
+  .telephone i.fa-clock, .mailTo i.fa-clock, .schedule i.fa-clock {
+    color: white; }
 
 .navPanel {
   background-color: #3e4156;
