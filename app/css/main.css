@@ -65,7 +65,7 @@ article, aside, figure, footer, header, hgroup, nav, section {
     display: inline-block;
     color: white;
     font-weight: bold;
-    padding: 0.5em; }
+    padding: 0.2em; }
     .nameCompany p :nth-child(1) {
       text-transform: uppercase; }
     .nameCompany p :nth-child(2) {
@@ -103,33 +103,27 @@ article, aside, figure, footer, header, hgroup, nav, section {
   z-index: 2;
   width: 100%; }
 
-nav {
-  display: block;
-  background: #3E4156; }
-
 .menu {
-  display: block; }
-
-.menu li {
-  display: inline-block;
-  position: relative;
-  z-index: 100; }
-
-.menu li:first-child {
-  margin-left: 0; }
-
-.menu li a {
-  font-weight: 600;
-  text-decoration: none;
-  font-size: 1.2em;
-  padding: 11px;
   display: block;
-  color: #ffffff;
-  -webkit-transition: all 0.2s ease-in-out 0s;
-  -moz-transition: all 0.2s ease-in-out 0s;
-  -o-transition: all 0.2s ease-in-out 0s;
-  -ms-transition: all 0.2s ease-in-out 0s;
-  transition: all 0.2s ease-in-out 0s; }
+  text-transform: uppercase; }
+  .menu li {
+    display: inline-block;
+    position: relative;
+    z-index: 100; }
+    .menu li :first-child {
+      margin-left: 0; }
+    .menu li a {
+      font-weight: 600;
+      text-decoration: none;
+      font-size: 1em;
+      padding: 11px;
+      display: block;
+      color: #ffffff;
+      -webkit-transition: all 0.2s ease-in-out 0s;
+      -moz-transition: all 0.2s ease-in-out 0s;
+      -o-transition: all 0.2s ease-in-out 0s;
+      -ms-transition: all 0.2s ease-in-out 0s;
+      transition: all 0.2s ease-in-out 0s; }
 
 .menu li a:hover, .menu li:hover > a {
   color: #ffffff;
@@ -272,18 +266,23 @@ ul {
 
 .service {
   color: #6F6F6F; }
-
-.service h3 {
-  font-size: 2em; }
-
-.service ul {
-  width: 90%;
-  display: inline-block; }
-
-.service ul > li {
-  font-size: 1.5em;
-  padding-top: 0.5em;
-  text-align: justify; }
+  .service img {
+    width: 30%;
+    float: left;
+    margin: 2em; }
+  .service h3 {
+    font-size: 2em; }
+  .service ul {
+    width: 95%;
+    display: block;
+    margin-left: 0.5em;
+    padding-left: 0.5em; }
+    .service ul li {
+      font-size: 1.5em;
+      padding-top: 0.5em;
+      text-align: justify;
+      list-style-position: inside;
+      padding-left: 0.5em; }
 
 .direction {
   color: #6F6F6F; }
