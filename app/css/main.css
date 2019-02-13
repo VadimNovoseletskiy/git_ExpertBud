@@ -59,9 +59,17 @@ article, aside, figure, footer, header, hgroup, nav, section {
   line-height: 2em; }
   .nameCompany img {
     width: 6%;
-    float: left; }
+    display: inline-block;
+    vertical-align: middle; }
   .nameCompany p {
-    display: inline-block; }
+    display: inline-block;
+    color: white;
+    font-weight: bold;
+    padding: 0.5em; }
+    .nameCompany p :nth-child(1) {
+      text-transform: uppercase; }
+    .nameCompany p :nth-child(2) {
+      text-transform: capitalize; }
 
 .addressPanel {
   background-color: #ed9a00;
