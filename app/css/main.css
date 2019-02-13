@@ -76,14 +76,16 @@ article, aside, figure, footer, header, hgroup, nav, section {
   font-weight: bold;
   margin-left: 0.5em; }
 
-.telephone, .mailTo, .schedule {
+.language, .telephone, .mailTo, .schedule {
   line-height: 2em; }
-  .telephone i.fa-phone, .mailTo i.fa-phone, .schedule i.fa-phone {
+  .language i.fa-globe, .telephone i.fa-globe, .mailTo i.fa-globe, .schedule i.fa-globe {
+    color: white; }
+  .language i.fa-phone, .telephone i.fa-phone, .mailTo i.fa-phone, .schedule i.fa-phone {
     transform: rotate(160deg);
     color: white; }
-  .telephone i.fa-envelope, .mailTo i.fa-envelope, .schedule i.fa-envelope {
+  .language i.fa-envelope, .telephone i.fa-envelope, .mailTo i.fa-envelope, .schedule i.fa-envelope {
     color: white; }
-  .telephone i.fa-clock, .mailTo i.fa-clock, .schedule i.fa-clock {
+  .language i.fa-clock, .telephone i.fa-clock, .mailTo i.fa-clock, .schedule i.fa-clock {
     color: white; }
 
 .navPanel {

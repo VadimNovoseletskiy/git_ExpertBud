@@ -19,8 +19,13 @@
 
 // стили для иконок(телефон, почта, график работы )
 
-.telephone, .mailTo , .schedule{
+.language, .telephone, .mailTo , .schedule{
+    
     line-height: 2em;
+
+    i.fa-globe{
+        color: white;
+    }
 
     i.fa-phone{
         transform: rotate(160deg);
