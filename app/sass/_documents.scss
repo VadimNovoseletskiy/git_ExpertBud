@@ -1,40 +1,69 @@
 
 .documents{
-    color:#6F6F6F;
-}
-.documents h3{
-    font-size: 2em;
+
+    div{
+        color:#6F6F6F;
+
+        h3{
+            font-size: 2em;
+        }
+
+        p{
+            margin-top:1em;
+            margin-bottom: 1em;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        ul{
+            width: 90%;
+            display: inline-block;
+
+            li{
+                font-size: 1.5em;
+                padding-top: 0.5em;
+                text-align: justify;
+
+                ul{
+                    list-style-position: inside;
+                    li{
+                        font-size: 1em;
+                        padding-top: 0.5em;
+                        padding-left: 1em;
+                        text-align: justify; 
+                    }
+                }
+            }
+        }
+
+        h4.attention{
+            margin-top: 1em;
+            margin-bottom: 1em;
+            font-size: 1.4em;
+            font-weight: 900;
+            color: red;
+        
+        }
+
+        p.attentionText{
+
+            span{
+                font-size: 1.4em;
+                font-weight: 900;
+                margin-left: 1em;
+                display: inline-block;
+                width: 90%;
+            
+            }
+
+        }
+    } 
+    
 }
 
-.documents ul{
-    width: 90%;
-    display: inline-block;
-}
 
-.documents>div>ul>li{
-    font-size: 1.5em;
-    padding-top: 0.5em;
-    text-align: justify;
-}
 
-p.attention{
-    margin-top:2em;
-}
 
-h4.attention{
-    margin-top: 1em;
-    margin-bottom: 1em;
-    font-size: 1.4em;
-    font-weight: 900;
-    color: red;
 
-}
 
-p.attentionText>span{
-    font-size: 1.4em;
-    font-weight: 900;
-    margin-left: 1em;
-    display: inline-block;
-    width: 90%;
 
-}

@@ -19,20 +19,32 @@
     width: 50%;
 }
 
-.icons{
+
+.icons {
     margin-top: 5em;
+    p{
+        margin-top: 1em;
+        width: 80%;
+        height:4em ;
+        font-size: 1.4em;
+        display: inline-block;
+    }
+
+    button{
+        font-size: 1em;
+        border-radius: 0.5em;
+        width: 40%;
+        height: 3em;
+    }
+
+    a{
+        display: inline-block;
+        text-decoration: none;
+        padding: 0.8em 2em;
+        color: black;
+        border-radius: 0.6em;
+        border: 2px solid black;
+        background-color: #f0f0f0;
+    }
 }
 
-.icons p{
-    width: 80%;
-    height:4em ;
-    font-size: 1.2em;
-    display: inline-block;
-}
-
-.icons button{
-    font-size: 1em;
-    border-radius: 0.5em;
-    width: 40%;
-    height: 3em;
-}

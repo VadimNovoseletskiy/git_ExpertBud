@@ -1,5 +1,51 @@
 
-.nameCompany{
+.nameForMobile{
+    display: none;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    background-color: #3e4156;
+    height: 5em;
+}
+
+.nameCompanyDeskTop{
+
+    line-height: 2em;
+
+
+    img{
+        width: 8%;
+        display: inline-block;
+        vertical-align: middle;
+        margin-bottom: 0.2em
+
+    }
+
+    p{
+        display: inline-block;
+        color: white;
+        font-weight: bold;
+        // vertical-align: bottom;
+        padding: 0.2em;
+        margin-left: 1em;
+
+
+        :nth-child(1){
+            text-transform: capitalize;
+        }
+        :nth-child(2){
+            text-transform: uppercase;
+        }
+
+        :nth-child(3){
+            text-transform: capitalize;
+        }
+    }
+}
+
+.nameCompanyForMobile{
+
+    
 
     line-height: 2em;
 
@@ -9,22 +55,26 @@
         display: inline-block;
         vertical-align: middle;
 
-        // float: left;
     }
 
     p{
         display: inline-block;
-        color: white;
+        color: rgb(37, 34, 34);
         font-weight: bold;
         // vertical-align: bottom;
         padding: 0.2em;
+        margin-left: 1em;
 
         :nth-child(1){
+            text-transform: capitalize;
+        }
+        :nth-child(2){
             text-transform: uppercase;
         }
 
-        :nth-child(2){
+        :nth-child(3){
             text-transform: capitalize;
         }
     }
 }
+

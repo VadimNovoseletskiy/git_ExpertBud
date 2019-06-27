@@ -1,19 +1,20 @@
 .direction{
     color:#6F6F6F;
+
+    h3{
+        font-size: 2em;
+    }
+
+    ul{
+        width: 90%;
+        display: inline-block;
+
+        li{
+            font-size: 1.5em;
+            padding-top: 0.5em;
+            text-align: justify;
+        }
+    }
 }
 
-.direction h3{
-    font-size: 2em;
-}
-
-.direction ul{
-    width: 90%;
-    display: inline-block;
-}
-
-.direction ul>li{
-    font-size: 1.5em;
-    padding-top: 0.5em;
-    text-align: justify;
-}
 

@@ -1,14 +1,26 @@
 .consulting{
+    
     color:#6F6F6F;
+
+    p{
+        font-size: 1.5em;
+        text-align: justify;
+        width: 90%;
+        display: inline-block;
+        text-indent: 1em;
+        line-height: 1.5;
+    }
+
+    ul{
+        width: 90%;
+        display: inline-block;
+
+        li{
+            font-size: 1.5em;
+            padding-top: 0.5em;
+            text-align: justify;
+        }
+    }
+    
 }
 
-.consulting ul{
-    width: 90%;
-    display: inline-block;
-}
-
-.consulting ul>li{
-    font-size: 1.5em;
-    padding-top: 0.5em;
-    text-align: justify;
-}
