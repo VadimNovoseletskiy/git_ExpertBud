@@ -44,7 +44,7 @@ gulp.task('browser-sync', function() { // Создаем таск browser-sync
 
 
 gulp.task('html',function(){
-    return gulp.src('app/*.html')
+    return gulp.src('app/**/*.html')
     .pipe(browserSync.reload({stream:true}))
 
 });
@@ -79,7 +79,7 @@ gulp.task('watch', function() {
     gulp.watch('app/sass/**/*.scss', gulp.parallel('sass')); // Наблюдение за sass файлами
     // Наблюдение за другими типами файлов
     // gulp.watch('*.html', browserSync.reload); //это наблюдение за HTML не работает 
-    gulp.watch('app/*.html',gulp.parallel('html'));//Наблюдение за HTML файлами в корне проекта
+    gulp.watch('app/**/*.html',gulp.parallel('html'));//Наблюдение за HTML файлами в корне проекта
     gulp.watch('app/js/**/*.js', gulp.parallel('js')); // Н
 });
 
