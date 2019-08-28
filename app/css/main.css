@@ -55,20 +55,51 @@ article, aside, figure, footer, header, hgroup, nav, section {
   clear: both; }
 
 /* end clear fix */
-.nameCompany {
+.nameForMobile {
+  display: none;
+  width: 100%;
+  position: fixed;
+  z-index: 2;
+  background-color: #3e4156;
+  height: 5em; }
+
+.nameCompanyDeskTop {
   line-height: 2em; }
-  .nameCompany img {
-    width: 6%;
+  .nameCompanyDeskTop img {
+    width: 8%;
     display: inline-block;
-    vertical-align: middle; }
-  .nameCompany p {
+    vertical-align: middle;
+    margin-bottom: 0.2em; }
+  .nameCompanyDeskTop p {
     display: inline-block;
     color: white;
     font-weight: bold;
-    padding: 0.2em; }
-    .nameCompany p :nth-child(1) {
+    padding: 0.2em;
+    margin-left: 1em; }
+    .nameCompanyDeskTop p :nth-child(1) {
+      text-transform: capitalize; }
+    .nameCompanyDeskTop p :nth-child(2) {
       text-transform: uppercase; }
-    .nameCompany p :nth-child(2) {
+    .nameCompanyDeskTop p :nth-child(3) {
+      text-transform: capitalize; }
+
+.nameCompanyForMobile {
+  line-height: 2em; }
+  .nameCompanyForMobile img {
+    width: 6%;
+    display: inline-block;
+    vertical-align: middle; }
+  .nameCompanyForMobile p {
+    display: inline-block;
+    color: #252222;
+    font-weight: bold;
+    padding: 0.2em;
+    margin-left: 1em; }
+    .nameCompanyForMobile p :nth-child(1) {
+      text-transform: capitalize; }
+    .nameCompanyForMobile p :nth-child(2) {
+      text-transform: uppercase; }
+    .nameCompanyForMobile p :nth-child(3) {
       text-transform: capitalize; }
 
 .addressPanel {
@@ -77,24 +108,24 @@ article, aside, figure, footer, header, hgroup, nav, section {
   position: fixed;
   z-index: 2;
   width: 100%; }
-
-.addressPanel span {
-  color: white;
-  font-size: 1.1em;
-  font-weight: bold;
-  margin-left: 0.5em; }
-
-.language, .telephone, .mailTo, .schedule {
-  line-height: 2em; }
-  .language i.fa-globe, .telephone i.fa-globe, .mailTo i.fa-globe, .schedule i.fa-globe {
-    color: white; }
-  .language i.fa-phone, .telephone i.fa-phone, .mailTo i.fa-phone, .schedule i.fa-phone {
-    transform: rotate(160deg);
-    color: white; }
-  .language i.fa-envelope, .telephone i.fa-envelope, .mailTo i.fa-envelope, .schedule i.fa-envelope {
-    color: white; }
-  .language i.fa-clock, .telephone i.fa-clock, .mailTo i.fa-clock, .schedule i.fa-clock {
-    color: white; }
+  .addressPanel a {
+    text-decoration: none; }
+  .addressPanel span {
+    color: white;
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-left: 0.5em; }
+  .addressPanel .language, .addressPanel .telephone, .addressPanel .mailTo, .addressPanel .schedule {
+    line-height: 2em; }
+    .addressPanel .language i.fa-globe, .addressPanel .telephone i.fa-globe, .addressPanel .mailTo i.fa-globe, .addressPanel .schedule i.fa-globe {
+      color: white; }
+    .addressPanel .language i.fa-phone, .addressPanel .telephone i.fa-phone, .addressPanel .mailTo i.fa-phone, .addressPanel .schedule i.fa-phone {
+      transform: rotate(160deg);
+      color: white; }
+    .addressPanel .language i.fa-envelope, .addressPanel .telephone i.fa-envelope, .addressPanel .mailTo i.fa-envelope, .addressPanel .schedule i.fa-envelope {
+      color: white; }
+    .addressPanel .language i.fa-clock, .addressPanel .telephone i.fa-clock, .addressPanel .mailTo i.fa-clock, .addressPanel .schedule i.fa-clock {
+      color: white; }
 
 .navPanel {
   background-color: #3e4156;
@@ -102,6 +133,9 @@ article, aside, figure, footer, header, hgroup, nav, section {
   position: fixed;
   z-index: 2;
   width: 100%; }
+
+.forMobile {
+  display: none; }
 
 .menu {
   display: block;
@@ -124,47 +158,12 @@ article, aside, figure, footer, header, hgroup, nav, section {
       -o-transition: all 0.2s ease-in-out 0s;
       -ms-transition: all 0.2s ease-in-out 0s;
       transition: all 0.2s ease-in-out 0s; }
-
-.menu li a:hover, .menu li:hover > a {
-  color: #ffffff;
-  background: #9CA3DA; }
-
-.menu ul {
-  display: none;
-  margin: 0;
-  padding: 0;
-  width: 150px;
-  position: absolute;
-  top: 43px;
-  left: 0px;
-  background: #ffffff; }
-
-.menu ul li {
-  display: block;
-  float: none;
-  background: none;
-  margin: 0;
-  padding: 0; }
-
-.menu ul li a {
-  font-size: 12px;
-  font-weight: normal;
-  display: block;
-  color: #797979;
-  border-left: 3px solid #ffffff;
-  background: #ffffff; }
-
-.menu ul li a:hover, .menu ul li:hover > a {
-  background: #f0f0f0;
-  border-left: 3px solid #9CA3DA;
-  color: #797979; }
-
-.menu li:hover > ul {
-  display: block; }
-
-.menu ul ul {
-  left: 149px;
-  top: 0px; }
+    .menu li a:hover {
+      background: #9CA3DA; }
+    .menu li a.CallMe {
+      color: #3e4156; }
+    .menu li i.fa-phone {
+      transform: rotate(160deg); }
 
 .mobile-menu {
   display: none;
@@ -173,16 +172,14 @@ article, aside, figure, footer, header, hgroup, nav, section {
   background: #3E4156;
   color: #ffffff;
   text-transform: uppercase;
-  font-weight: 600; }
-
-.mobile-menu:hover {
-  background: #3E4156;
-  color: #ffffff;
-  text-decoration: none; }
+  font-weight: 600;
+  border-bottom: 1px solid white; }
+  .mobile-menu :hover {
+    background: #3E4156;
+    color: #ffffff;
+    text-decoration: none; }
 
 @media (min-width: 768px) and (max-width: 979px) {
-  .mainWrap {
-    width: 768px; }
   .menu ul {
     top: 37px; }
   .menu li a {
@@ -190,41 +187,37 @@ article, aside, figure, footer, header, hgroup, nav, section {
     padding: 8px; } }
 
 @media (max-width: 767px) {
-  .mainWrap {
-    width: auto;
-    padding: 50px 20px; }
+  .navPanel {
+    display: none; }
+  .forMobile {
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    display: block;
+    margin-bottom: 1em;
+    width: 100%;
+    border: 1px solid yellow;
+    border-left: 2px solid yellow; }
+    .forMobile a {
+      text-decoration: none; }
+  .mobile-menu {
+    display: block; }
   .menu {
     display: none; }
-  .mobile-menu {
-    display: block;
-    margin-top: 100px; }
-  nav {
-    margin: 0;
-    background: none; }
-  .menu li {
-    display: block;
-    margin: 0; }
-  .menu li a {
-    background: #ffffff;
-    color: #797979;
-    border-top: 1px solid #e0e0e0;
-    border-left: 3px solid #ffffff; }
-  .menu li a:hover, .menu li:hover > a {
-    background: #f0f0f0;
-    color: #797979;
-    border-left: 3px solid #9CA3DA; }
-  .menu ul {
-    display: block;
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%; }
-  .menu ul ul {
-    left: 0; } }
-
-ul {
-  margin-top: 0;
-  margin-bottom: 0; }
+    .menu ul {
+      top: 4em; }
+    .menu li {
+      display: block;
+      margin: 0; }
+      .menu li a {
+        background: #ffffff;
+        color: #797979;
+        border-top: 1px solid #e0e0e0;
+        border-left: 3px solid #ffffff; }
+      .menu li a:hover {
+        background: #f0f0f0;
+        color: #797979;
+        border-left: 3px solid #9CA3DA; } }
 
 .headlines h2 {
   margin-top: 2em;
@@ -243,26 +236,30 @@ ul {
   .mainImage img {
     width: 100%;
     height: 100vh; }
-
-.baner-text {
-  position: absolute;
-  bottom: 5%;
-  /*Привязываем к нижней части на случай большого объема текста*/
-  left: 2%;
-  font: 1.5em verdana;
-  padding: 2em;
-  background: rgba(0, 0, 0, 0.7);
-  width: 50%;
-  color: white; }
-  .baner-text h2 {
-    text-transform: uppercase;
-    font-size: 1.5em;
-    line-height: 1.5em;
-    margin-bottom: 1em; }
-  .baner-text p {
-    font-size: 1em;
-    line-height: 1.5em;
-    font-style: italic; }
+  .mainImage .baner-text {
+    position: absolute;
+    bottom: 5%;
+    /*Привязываем к нижней части на случай большого объема текста*/
+    left: 2%;
+    font: 1.5em verdana;
+    padding: 2em;
+    background: rgba(0, 0, 0, 0.7);
+    width: 50%;
+    color: white; }
+    .mainImage .baner-text img {
+      display: inline-block;
+      width: 16%;
+      height: 4em;
+      margin-bottom: 1em; }
+    .mainImage .baner-text h2 {
+      text-transform: uppercase;
+      font-size: 1.5em;
+      line-height: 1.5em;
+      margin-bottom: 1em; }
+    .mainImage .baner-text p {
+      font-size: 1em;
+      line-height: 1.5em;
+      font-style: italic; }
 
 .service {
   color: #6F6F6F; }
@@ -286,62 +283,68 @@ ul {
 
 .direction {
   color: #6F6F6F; }
-
-.direction h3 {
-  font-size: 2em; }
-
-.direction ul {
-  width: 90%;
-  display: inline-block; }
-
-.direction ul > li {
-  font-size: 1.5em;
-  padding-top: 0.5em;
-  text-align: justify; }
+  .direction h3 {
+    font-size: 2em; }
+  .direction ul {
+    width: 90%;
+    display: inline-block; }
+    .direction ul li {
+      font-size: 1.5em;
+      padding-top: 0.5em;
+      text-align: justify; }
 
 .consulting {
   color: #6F6F6F; }
+  .consulting p {
+    font-size: 1.5em;
+    text-align: justify;
+    width: 90%;
+    display: inline-block;
+    text-indent: 1em;
+    line-height: 1.5; }
+  .consulting ul {
+    width: 90%;
+    display: inline-block; }
+    .consulting ul li {
+      font-size: 1.5em;
+      padding-top: 0.5em;
+      text-align: justify; }
 
-.consulting ul {
-  width: 90%;
-  display: inline-block; }
-
-.consulting ul > li {
-  font-size: 1.5em;
-  padding-top: 0.5em;
-  text-align: justify; }
-
-.documents {
+.documents div {
   color: #6F6F6F; }
-
-.documents h3 {
-  font-size: 2em; }
-
-.documents ul {
-  width: 90%;
-  display: inline-block; }
-
-.documents > div > ul > li {
-  font-size: 1.5em;
-  padding-top: 0.5em;
-  text-align: justify; }
-
-p.attention {
-  margin-top: 2em; }
-
-h4.attention {
-  margin-top: 1em;
-  margin-bottom: 1em;
-  font-size: 1.4em;
-  font-weight: 900;
-  color: red; }
-
-p.attentionText > span {
-  font-size: 1.4em;
-  font-weight: 900;
-  margin-left: 1em;
-  display: inline-block;
-  width: 90%; }
+  .documents div h3 {
+    font-size: 2em; }
+  .documents div p {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-weight: bold;
+    font-size: 1.2em; }
+  .documents div ul {
+    width: 90%;
+    display: inline-block; }
+    .documents div ul li {
+      font-size: 1.5em;
+      padding-top: 0.5em;
+      text-align: justify; }
+      .documents div ul li ul {
+        list-style-position: inside; }
+        .documents div ul li ul li {
+          font-size: 1em;
+          padding-top: 0.5em;
+          padding-left: 1em;
+          text-align: justify; }
+  .documents div h4.attention {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 1.4em;
+    font-weight: 900;
+    color: red; }
+  .documents div p.attentionText span {
+    font-size: 1.4em;
+    font-weight: 900;
+    margin-left: 1em;
+    display: inline-block;
+    width: 90%; }
 
 .langIcon {
   width: 20%;
@@ -361,38 +364,149 @@ p.attentionText > span {
 
 .icons {
   margin-top: 5em; }
-
-.icons p {
-  width: 80%;
-  height: 4em;
-  font-size: 1.2em;
-  display: inline-block; }
-
-.icons button {
-  font-size: 1em;
-  border-radius: 0.5em;
-  width: 40%;
-  height: 3em; }
+  .icons p {
+    margin-top: 1em;
+    width: 80%;
+    height: 4em;
+    font-size: 1.4em;
+    display: inline-block; }
+  .icons button {
+    font-size: 1em;
+    border-radius: 0.5em;
+    width: 40%;
+    height: 3em; }
+  .icons a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 0.8em 2em;
+    color: black;
+    border-radius: 0.6em;
+    border: 2px solid black;
+    background-color: #f0f0f0; }
 
 .contacts {
   color: #6F6F6F; }
-
-.contacts h2 {
-  font-size: 1.8em; }
-
-.contacts p {
-  font-size: 1.2em; }
-
-.adress {
-  width: 90%;
-  display: inline-block; }
+  .contacts .adress {
+    width: 90%;
+    display: inline-block; }
+    .contacts .adress h2 {
+      font-size: 1.8em;
+      margin: 0.4em 0 0.4em 0; }
+    .contacts .adress p {
+      font-size: 1.4em; }
+    .contacts .adress i.fa-phone {
+      transform: rotate(160deg); }
 
 iframe.maps {
   width: 90%; }
 
 .footer {
   background-color: #0041ED;
-  height: 5em; }
+  height: 2em; }
+
+@media only screen and (min-width: 280px) and (max-width: 479px) {
+  .nameForMobile {
+    display: block; }
+  .nameCompanyDeskTop {
+    display: none; }
+  .addressPanel {
+    display: none; }
+  .mainImage {
+    height: 100vh;
+    background-image: url("./../img/exp.jpg"); }
+    .mainImage img {
+      display: none; }
+    .mainImage .baner-text {
+      font: 1em verdana;
+      width: 90%; }
+      .mainImage .baner-text h2 {
+        font-size: 1em;
+        line-height: 1em; }
+      .mainImage .baner-text p {
+        font-size: 1em;
+        font-style: italic; }
+  .headlines h2 {
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    font-size: 2.5em;
+    width: 80%;
+    display: inline-block;
+    color: #1C65D4; }
+  .service img {
+    width: 95%;
+    margin: 0.6em; }
+  .service h3 {
+    font-size: 2em; }
+  .service ul {
+    width: 85%;
+    display: inline-block;
+    text-align: justify;
+    margin-left: 0em;
+    padding-left: 0em; }
+    .service ul li {
+      font-size: 1.5em;
+      padding-top: 0.5em;
+      text-align: justify;
+      list-style-position: inside;
+      padding-left: 0em; }
+  .direction h3 {
+    font-size: 2em;
+    margin-top: 1em; }
+  .direction ul {
+    width: 80%; }
+    .direction ul li {
+      font-size: 1.5em;
+      padding-top: 0.5em;
+      text-align: justify; }
+  .consulting ul {
+    width: 80%; }
+    .consulting ul li {
+      font-size: 1.4em; }
+  .documents div ul {
+    width: 80%; }
+    .documents div ul li {
+      font-size: 1.4em;
+      padding-top: 0.5em; }
+  .documents div h4.attention {
+    font-size: 1.4em; }
+  .documents div p.attentionText span {
+    font-size: 1.2em;
+    margin-left: 0;
+    width: 80%;
+    text-align: justify; }
+  .contacts .googleMaps {
+    margin-bottom: 2em; }
+  .contacts iframe.maps {
+    width: 90%; }
+  .contacts .adress {
+    width: 90%; }
+    .contacts .adress h2 {
+      font-size: 1.6em; }
+    .contacts .adress p {
+      font-size: 1.3em; }
+    .contacts .adress .telephoneNumber {
+      margin-bottom: 1em; }
+    .contacts .adress i.fa-phone {
+      transform: rotate(160deg); }
+  .footer {
+    margin-top: 2em;
+    height: 2em; } }
+
+@media only screen and (min-width: 480px) and (max-width: 629px) {
+  .nameForMobile {
+    display: block; }
+  .nameCompanyDeskTop {
+    display: none; }
+  .addressPanel {
+    display: none; } }
+
+@media only screen and (min-width: 630px) and (max-width: 767px) {
+  .nameForMobile {
+    display: block; }
+  .nameCompanyDeskTop {
+    display: none; }
+  .addressPanel {
+    display: none; } }
 
 @media only screen and (min-width: 767px) and (max-width: 849px) {
   .container .cols.col-1 {
