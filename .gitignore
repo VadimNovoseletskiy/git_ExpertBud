@@ -61,7 +61,7 @@ typings/
 .next
 
 # gulp
-# gulpfile.js
+gulpfile.js
 
 # css
 app/css
